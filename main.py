@@ -14,6 +14,7 @@ def send_welcome(message):
 def search_music(message):
     # Get the query from the user
     query = message.text[8:]
+    print(query)
     if not query:
         bot.reply_to(message, 'Please enter a music name after /search.')
         return
